@@ -1,0 +1,8 @@
+.header__select-city {
+  appearance: none;
+  margin:0 auto;
+  min-width: 34%;
+  border-radius: 0;
+  text-align: center;
+  text-align-last: center;
+}

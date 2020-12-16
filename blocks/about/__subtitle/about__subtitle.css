@@ -1,0 +1,7 @@
+.about__subtitle {
+  max-width: 47%;
+  margin: 6px 0 0 0;
+  font-size: 18px;
+  line-height: 21px;
+  align-self: flex-start;
+}

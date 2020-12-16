@@ -1,20 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Document</title>
 </head>
-<body>
-  <header>
 
+<body class="pages">
+  <header class="header">
+    <form class="header__form">
+      <button type="button" class="header__profile"><img src="./images/avatar.png" alt="Аватар" class="header__avatar">
+      </button>
+      <select name="select-city" class="header__select-city">
+        <option value="Москва">Москва</option>
+        <option value="Питер" selected>Питер</option>
+        <option value="Краснодар">Краснодар</option>
+      </select>
+      <button type="button" class="header__search"><img src="./images/search.svg" alt="Поиск"></button>
+      <button type="button" class="header__login">Вход</button>
+    </form>
   </header>
-  <main>
+  <main class="main">
+    <section class="about section section_type_narrow">
+        <h1 class="about__title title">помогай животным</h1>
+        <p class="about__subtitle subtitle">вместе с командой единомышленников</p>
+        <button type="button" class="about__add-initiation">проявить инициативу</button>
+    </section>
+    <section class="create-initiation section section_type_narrow">
+      <h2 class="create-initiation__title title">Создать инициативу</h2>
+      <p class="create-initiation__subtitle subtitle">Выбери категорию, чтобы создать мероприятие</p>
+      <div class="create-initiation__container">
+        <button class="create-initiation__add">Природа</button>
+        <button class="create-initiation__add">Город</button>
+        <button class="create-initiation__add">Люди</button>
+        <button class="create-initiation__add">Животные</button>
+      </div>
+    </section>
+
+    <section class="result section section_type_narrow">
+      <h2 class="result__title title">Результаты</h2>
+      <p class="result__subtitle subtitle">Посмотри, каких результатов мы достигли вместе.</p>
+      <div class="result__gallery">
+        <img src="./images/Rectangle 16.png" alt="#" class="result__picture">
+        <img src="./images/Rectangle 16.png" alt="#" class="result__picture">
+        <img src="./images/Rectangle 16.png" alt="#" class="result__picture">
+        <img src="./images/Rectangle 16.png" alt="#" class="result__picture">
+        <img src="./images/Rectangle 16.png" alt="#" class="result__picture">
+        <img src="./images/Rectangle 16.png" alt="#" class="result__picture">
+        <img src="./images/Rectangle 16.png" alt="#" class="result__picture">
+        </div>
+    </section>
 
   </main>
   <footer>
-    
+
   </footer>
 </body>
+
 </html>

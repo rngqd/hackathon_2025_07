@@ -1,0 +1,4 @@
+.result__gallery {
+  display: flex;
+  overflow-x: scroll;
+}
