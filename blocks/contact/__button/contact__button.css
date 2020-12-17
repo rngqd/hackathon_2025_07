@@ -1,0 +1,12 @@
+.contact__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1; 
+  background: #FDFF86;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 0px #000000;
+  border-radius: 8px;
+  min-height: 46px;
+}

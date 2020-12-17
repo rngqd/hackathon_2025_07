@@ -1,0 +1,10 @@
+.contact__list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin:60px 0 0 0;
+  padding: 0;
+  height: 46px;
+  justify-content: center;
+  align-content: center;
+}

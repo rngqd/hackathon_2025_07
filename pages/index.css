@@ -22,3 +22,12 @@
 @import url(../blocks/create-initiation/__add/create-initiation__add.css);
 @import url(../blocks/result/result.css);
 @import url(../blocks/result/__gallery/result__gallery.css);
+@import url(../blocks/contact/__button/contact__button.css);
+@import url(../blocks/contact/__email/contact__email.css);
+@import url(../blocks/contact/__form/contact__form.css);
+@import url(../blocks/contact/__information/contact__information.css);
+@import url(../blocks/contact/__list/contact__list.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__socials/footer__socials.css);
+@import url(../blocks/footer/__text/footer__text.css);
+@import url(../blocks/footer/__social/footer__social.css);
