@@ -8,11 +8,9 @@
   <title>Document</title>
 </head>
 
-<body class="pages">
+<body class="page">
   <header class="header">
-    <form class="header__form">
-      <button type="button" class="header__profile"><img src="./images/avatar.png" alt="Аватар" class="header__avatar">
-      </button>
+      <img src="./images/avatar.png" alt="Аватар" class="header__logo"></>
       <select name="select-city" class="header__select-city">
         <option value="Москва">Москва</option>
         <option value="Питер" selected>Питер</option>
@@ -20,12 +18,51 @@
       </select>
       <button type="button" class="header__search"><img src="./images/search.svg" alt="Поиск"></button>
       <button type="button" class="header__login">Вход</button>
-    </form>
   </header>
   <main class="main">
-    <section class="about section section_type_narrow">
-      <h1 class="about__title title">помогай животным</h1>
-      <p class="about__subtitle subtitle">вместе с командой единомышленников</p>
+    <section class="about section ">
+      <div class="about__container">
+          <div class="about__item">
+            <h1 class="about__title">помогай животным</h1>
+            <p class="about__subtitle">Мир держится на добрых людях.<br>
+              Не на агрессии и зле.<br>
+              И если доброты не будет,<br>
+              То ничего не будет на земле.</p>
+            <img src="./images/main-slider-1.png" alt="" class="about__image">
+          </div>
+          <div class="about__item">
+            <h1 class="about__title">ДЕЛАЙ ГОРОД ЛУЧШЕ </h1>
+            <p class="about__subtitle">Быть может, это всё наивно.<br>
+              Но вижу я в который раз,<br>
+              Как над землёй бушуют ливни,<br>
+              Чтоб смыть скопившуюся грязь.</p>
+            <img src="./images/main-slider-2.png" alt="" class="about__image">
+          </div>
+          <div class="about__item">
+            <h1 class="about__title">ЗАРАБАТЫВАЙ БАЛЛЫ</h1>
+            <p class="about__subtitle">Мир держится на милосердьи,<br>
+              А не на выгоде и лжи.<br>
+              Никто из нас не минёт смерти,<br>
+              А потому добро творить спеши.</p>
+            <img src="./images/main-slider-3.png" alt="" class="about__image">
+          </div>      
+          <div class="about__item">
+            <h1 class="about__title">СОЗДАВАЙ ЗАДАНИЯ СТИХАМИ КЛАССИКОВ</h1>
+            <p class="about__subtitle">Так пусть в нас совесть не убудет<br>
+              И правда не сорвётся вниз…<br>
+              Мир держится на мудрых людях,<br>
+              Как держится при солнце жизнь.</p>
+            <img src="./images/main-slider-4.png" alt="" class="about__image">
+          </div>
+          <div class="about__item">
+            <h1 class="about__title">ПОЛУЧАЙ ПОДАРКИ </h1>
+            <p class="about__subtitle">Все держится на состраданьи,<br>
+              А не на важности пустой.<br>
+              Вот кто-то свет потёмкам дарит,<br>
+              Чтоб озарить жизнь красотой.</p>
+            <img src="./images/main-slider-5.png" alt="" class="about__image">
+      </div>
+    </div>
       <button type="button" class="about__add-initiation">проявить инициативу</button>
     </section>
     <section class="create-initiation section section_type_narrow">
@@ -58,22 +95,24 @@
       <form class="contact__form">
         <input type="email" class="contact__email" placeholder="Почта" name="email">
         <button class="contact__button">Подписаться</button>
-        <ul class="contact__list">
-          <li class="contact__information">О нас</li>
-          <li class="contact__information">Партнеры</li>
-          <li class="contact__information">Связаться</li>
-        </ul>
       </form>
     </section>
 
   </main>
   <footer class="footer">
+    <ul class="footer__list">
+      <li class="footer__information">О нас</li>
+      <li class="footer__information">Партнеры</li>
+      <li class="footer__information">Связаться</li>
+    </ul>
+    <div class="footer__container">
       <p class="footer__text"> Copyright © 2019</p>
       <nav class="footer__socials">
-        <a class class="footer__social" href="Фейсбук"> <img src="./images/Facebook.svg" alt="#"></a>
-        <a class class="footer__social" href="Линкд"> <img src="./images/Linkedin.svg" alt="#"></a>
-        <a class class="footer__social" href="Гугл"> <img src="./images/Google.svg" alt=""></a>
+        <a class class="footer__social" href="#"> <img src="./images/Facebook.svg" alt="Фейсбук"></a>
+        <a class class="footer__social" href="#"> <img src="./images/Linkedin.svg" alt="Линкд"></a>
+        <a class class="footer__social" href="#"> <img src="./images/Google.svg" alt="Гугл"></a>
       </nav>
+    </div>
   </footer>
 </body>
 

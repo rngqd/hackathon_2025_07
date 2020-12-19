@@ -1,0 +1,9 @@
+.footer__information {
+  background: #D0F1EF;
+  border: 1px solid #458F94;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 48px;
+  border-left: none;
+  text-align: center;
+}

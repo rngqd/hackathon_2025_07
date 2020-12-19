@@ -1,0 +1,6 @@
+.about__container {
+  display: flex;
+  overflow-x: scroll;
+  min-height: 500px;
+  overflow-y: hidden;
+}

@@ -1,5 +1,7 @@
 .header__login {
-  min-width:25%;
-  border-radius: 0;
- 
+  background: #D0F1EF;
+  border: 1px solid #458F94;
+  border-right: none;
+  box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
 }

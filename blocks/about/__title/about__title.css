@@ -1,3 +1,13 @@
 .about__title {
-  text-transform:uppercase
+  text-transform:uppercase;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin: 18px 0 0 28px;
 }

@@ -3,10 +3,9 @@
   right: 0;
   top: 0;
   z-index: 1; 
-  background: #FDFF86;
-  border: 1px solid #000000;
+  background: #5BC0C0;
+  border: 1px solid #458F94;
   box-sizing: border-box;
-  box-shadow: 0px 2px 0px #000000;
-  border-radius: 8px;
+  border-radius: 4px;
   min-height: 46px;
 }

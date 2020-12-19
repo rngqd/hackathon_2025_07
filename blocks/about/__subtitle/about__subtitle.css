@@ -1,7 +1,9 @@
 .about__subtitle {
-  max-width: 47%;
-  margin: 6px 0 0 0;
-  font-size: 18px;
-  line-height: 21px;
-  align-self: flex-start;
+  margin: 6px 0 0 28px;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FDF8F1;
 }

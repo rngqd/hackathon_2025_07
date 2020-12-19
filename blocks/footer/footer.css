@@ -1,9 +1,6 @@
 .footer {
   display: flex;
-  background: #36A89A;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 2px;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  max-width: 375px;
+  margin:0 auto;
 }

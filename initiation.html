@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/initiation.css">
+  <title>Document</title>
+</head>
+<header class="header">
+  <form class="header__form">
+    <button type="button" class="header__profile"><img src="./images/avatar.png" alt="Аватар" class="header__avatar">
+    </button>
+    <select name="select-city" class="header__select-city">
+      <option value="Москва">Москва</option>
+      <option value="Питер" selected>Питер</option>
+      <option value="Краснодар">Краснодар</option>
+    </select>
+    <button type="button" class="header__search"><img src="./images/search.svg" alt="Поиск"></button>
+    <button type="button" class="header__login">Вход</button>
+  </form>
+</header>
+<body class="page">
+  <main class="main">
+    <main class="main">
+      <section class="initiation section_type_narrow">
+        <select name="select__category" class="initiation__category">
+          <option value ="Уборка">Уборка</option>
+          <option value ="Покраска" selected>Покраска</option>
+          <option value ="Помощь">Помощь</option>
+        </select>
+        <form class="initiation__form">
+          <textarea class="initiation__text" name = "initiation__text"> Введите вашу инициативу </textarea>
+          <div class = "initiation__image"> 
+            <button type="button" class="initiation__add-image">+ фото</button>
+          </div>
+          <nav class="initiation__atribute"> 
+            <button type= "button" class = "initiation__atribute-button">Иконка локации</button>
+            <button type= "button" class = "initiation__atribute-button">Выбор даты</button>
+            <button type= "button" class = "initiation__atribute-button">Выбор времени</button>
+            <button type= "button" class = "initiation__atribute-button">Бонусы за участие</button>
+          </nav>
+          <button type = "submit" class ="initiation__create">Создать меропрития</button>
+        </form>
+      </section>
+  </main>
+  <footer class="footer">
+      <p class="footer__text"> Copyright © 2019</p>
+      <nav class="footer__socials">
+        <a class class="footer__social" href="Фейсбук"> <img src="./images/Facebook.svg" alt="#"></a>
+        <a class class="footer__social" href="Линкд"> <img src="./images/Linkedin.svg" alt="#"></a>
+        <a class class="footer__social" href="Гугл"> <img src="./images/Google.svg" alt=""></a>
+      </nav>
+  </footer>
+</body>
+
+</html>

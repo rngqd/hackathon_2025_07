@@ -1,8 +1,7 @@
 .contact__email {
-  background: #DEFFFD;
-  border: 1px solid #000000;
+  border: 1px solid #458F94;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 4px;
   min-width: 100%;
   z-index: 0;
   min-height: 46px;
