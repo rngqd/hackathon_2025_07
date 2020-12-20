@@ -1,7 +1,8 @@
-.ended-event__date {
+.event__text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #999999;
+  color: #101010;
+  margin-top: 24px;
 }
