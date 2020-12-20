@@ -1,3 +1,9 @@
 .initiation__create {
-  
+  margin:43px 0;
+  background: #FDFFAE;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 320px;
+  height: 48px;
 }
