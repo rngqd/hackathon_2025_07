@@ -1,4 +1,5 @@
 .result__gallery {
   display: flex;
   overflow-x: scroll;
+  height: 200px;
 }

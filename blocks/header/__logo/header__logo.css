@@ -1,5 +1,5 @@
 .header__logo {
-  border-radius: 0;
-  margin: auto;
-
+  background-image: url(../../../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }

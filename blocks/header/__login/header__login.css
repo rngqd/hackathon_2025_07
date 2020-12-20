@@ -4,4 +4,7 @@
   border-right: none;
   box-sizing: border-box;
   border-radius: 4px 0 0 4px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 44px;
 }

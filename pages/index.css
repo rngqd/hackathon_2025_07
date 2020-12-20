@@ -24,6 +24,7 @@
 @import url(../blocks/create-initiation/__container/create-initiation__container.css);
 @import url(../blocks/create-initiation/__add/create-initiation__add.css);
 @import url(../blocks/result/result.css);
+@import url(../blocks/result/__picture/result__picture.css);
 @import url(../blocks/result/__gallery/result__gallery.css);
 @import url(../blocks/contact/__button/contact__button.css);
 @import url(../blocks/contact/__email/contact__email.css);
