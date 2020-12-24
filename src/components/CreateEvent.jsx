@@ -1,5 +1,12 @@
 import React from 'react';
-import profile from '../images/Profile.png';
+import profile from '../images/profile.png';
+import calendar from '../images/calendar.svg';
+import time from '../images/time.svg';
+import location from '../images/location.svg';
+import bonus from '../images/bonus.svg';
+import Facebook from '../images/Facebook.svg';
+import Linkedin from '../images/Linkedin.svg';
+import Google from '../images/Google.svg';
 
 function CreateEvent() {
   return (
@@ -18,12 +25,12 @@ function CreateEvent() {
       <button type="button" className="initiation__add-image"></button>
       <form className="initiation__form">
         <nav className="initiation__atribute">
-          <button type="button" className="initiation__atribute-button"><img src="./images/calendar.svg"
+          <button type="button" className="initiation__atribute-button"><img src={calendar}
               alt="Календарь" /></button>
-          <button type="button" className="initiation__atribute-button"><img src="./images/time.svg" alt="Время" /></button>
-          <button type="button" className="initiation__atribute-button"><img src="./images/Location.svg"
+          <button type="button" className="initiation__atribute-button"><img src={time} alt="Время" /></button>
+          <button type="button" className="initiation__atribute-button"><img src={location}
               alt="Позиция" /></button>
-          <button type="button" className="initiation__atribute-button"><img src="./images/bonus.svg" alt="Бонусы" /></button>
+          <button type="button" className="initiation__atribute-button"><img src={bonus} alt="Бонусы" /></button>
         </nav>
         <select name="select__category" className="initiation__category">
           <option value="Уборка">Уборка</option>
@@ -38,7 +45,7 @@ function CreateEvent() {
           Мусор по округе разлетится,<br />
           Чистый город в грязный превратится.
         </article>
-        <button type="submit" className="initiation__create">Создать меропрития</button>
+        <button type="submit" className="initiation__create">Создать меропритие</button>
       </form>
     </section>
   </main>
@@ -46,9 +53,9 @@ function CreateEvent() {
     <div className="footer__container">
       <p className="footer__text"> Copyright © 2019</p>
       <nav className="footer__socials">
-        <a className className="footer__social" href="#"> <img src="./images/Facebook.svg" alt="Фейсбук" /></a>
-        <a className className="footer__social" href="#"> <img src="./images/Linkedin.svg" alt="Линкд" /></a>
-        <a className className="footer__social" href="#"> <img src="./images/Google.svg" alt="Гугл" /></a>
+        <a className className="footer__social" href="#"> <img src={Facebook} alt="Фейсбук" /></a>
+        <a className className="footer__social" href="#"> <img src={Linkedin} alt="Линкедин" /></a>
+      <a className className="footer__social" href="#"> <img src={Google} alt="Гугл" /></a>
       </nav>
     </div>
   </footer>
