@@ -4,9 +4,7 @@ import calendar from '../images/calendar.svg';
 import time from '../images/time.svg';
 import location from '../images/location.svg';
 import bonus from '../images/bonus.svg';
-import Facebook from '../images/Facebook.svg';
-import Linkedin from '../images/Linkedin.svg';
-import Google from '../images/Google.svg';
+
 
 function CreateEvent() {
   return (
@@ -49,16 +47,6 @@ function CreateEvent() {
       </form>
     </section>
   </main>
-  <footer className="footer">
-    <div className="footer__container">
-      <p className="footer__text"> Copyright © 2019</p>
-      <nav className="footer__socials">
-        <a className className="footer__social" href="#"> <img src={Facebook} alt="Фейсбук" /></a>
-        <a className className="footer__social" href="#"> <img src={Linkedin} alt="Линкедин" /></a>
-      <a className className="footer__social" href="#"> <img src={Google} alt="Гугл" /></a>
-      </nav>
-    </div>
-  </footer>
   </>
   )
 }
