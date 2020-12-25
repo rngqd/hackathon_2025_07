@@ -66,10 +66,10 @@ function Main() {
           <img src={mainSlider5} alt="" className="about__image" />
         </div>
       </div>
-      <button type="button" className="about__add-initiation">проявить инициативу</button>
+      <button type="button" className="about__add-initiation">Активные заявки</button>
     </section>
     <section className="create-initiation section section_type_narrow">
-      <h2 className="create-initiation__title title">Создать инициативу</h2>
+      <h2 className="create-initiation__title title">Создать заявку</h2>
       <p className="create-initiation__subtitle subtitle">Выбери категорию, чтобы создать мероприятие</p>
       <div className="create-initiation__container">
         <button className="create-initiation__add">Природа</button>
