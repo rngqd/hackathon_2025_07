@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import CreateEvent from './CreateEvent';
 import Main from './Main';
 import ActiveEvents from './ActiveEvents';
+import Results from './Results';
 import Facebook from '../images/Facebook.svg';
 import Linkedin from '../images/Linkedin.svg';
 import Google from '../images/Google.svg';
@@ -18,6 +19,9 @@ function App() {
       </Route>
       <Route path="/active-events">
         <ActiveEvents />
+      </Route>
+      <Route path="/results">
+        <Results />
       </Route>
       <footer className="footer">
     <div className="footer__container">
