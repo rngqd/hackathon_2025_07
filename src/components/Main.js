@@ -9,7 +9,8 @@ import result1 from '../images/result1.png';
 import result2 from '../images/result2.jpg';
 import result3 from '../images/result3.png';
 
-function Main() {
+function Main({handleClick}) {
+
   return (
     <>
     <header className="header">
@@ -72,7 +73,7 @@ function Main() {
       <h2 className="create-initiation__title title">Создать заявку</h2>
       <p className="create-initiation__subtitle subtitle">Выбери категорию, чтобы создать мероприятие</p>
       <div className="create-initiation__container">
-        <button className="create-initiation__add">Природа</button>
+        <button className="create-initiation__add" onClick={handleClick}>Природа</button>
         <button className="create-initiation__add">Город</button>
         <button className="create-initiation__add">Люди</button>
         <button className="create-initiation__add">Животные</button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch, Redirect, useHistory } from 'react-router-dom';
 import CreateEvent from './CreateEvent';
 import Main from './Main';
 import ActiveEvents from './ActiveEvents';
@@ -10,23 +10,32 @@ import Linkedin from '../images/Linkedin.svg';
 import Google from '../images/Google.svg';
 
 function App() {
+  const history = useHistory();
+
+
+  function createEvent() {
+    history.push("/create-event");
+  }
+
   return (
     <body class="page">
-      <Route exact path="/">
-        <Main />
-      </Route>
-      <Route path="/create-event">
-        <CreateEvent />
-      </Route>
-      <Route path="/active-events">
-        <ActiveEvents />
-      </Route>
-      <Route path="/results">
-        <Results />
-      </Route>
-      <Route path="/profile">
-        <Profile />
-      </Route>
+      <Switch>
+        <Route exact path="/">
+          <Main handleClick={createEvent} />
+        </Route>
+        <Route path="/create-event">
+          <CreateEvent />
+        </Route>
+        <Route path="/active-events">
+          <ActiveEvents />
+        </Route>
+        <Route path="/results">
+          <Results />
+        </Route>
+        <Route path="/profile">
+          <Profile />
+        </Route>
+      </Switch>
       <footer className="footer">
         <div className="footer__container">
           <p className="footer__text"> Copyright © 2019</p>
