@@ -1,0 +1,7 @@
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D0F1EF;
+  height: 200px;
+}

@@ -1,0 +1,19 @@
+.action__type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #D0F1EF;
+  border: 1px solid #458F94;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 150px;
+  height: 92px;
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
