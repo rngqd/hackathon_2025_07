@@ -1,9 +1,12 @@
 .footer__information {
   background: #D0F1EF;
-  border: 1px solid #458F94;
+  border: 2px solid #458F94;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0 4px 4px 4px;
   height: 48px;
   border-left: none;
   text-align: center;
+}
+.footer__information:last-child {
+  border-right: none;
 }

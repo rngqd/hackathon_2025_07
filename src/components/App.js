@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
 import { Route } from 'react-router-dom';
-import CreateEvent from "./CreateEvent";
+import CreateEvent from './CreateEvent';
 import Main from './Main';
+import ActiveEvents from './ActiveEvents';
 import Facebook from '../images/Facebook.svg';
 import Linkedin from '../images/Linkedin.svg';
 import Google from '../images/Google.svg';
@@ -14,6 +15,9 @@ function App() {
       </Route>
       <Route path="/create-event">
         <CreateEvent />
+      </Route>
+      <Route path="/active-events">
+        <ActiveEvents />
       </Route>
       <footer className="footer">
     <div className="footer__container">
