@@ -1,0 +1,7 @@
+.profile-card__avatar {
+  border-radius: 50%;
+  border: 2px solid #5BC0C0;
+  width: 154px;
+  height: 154px;
+  background-color: white;
+}
