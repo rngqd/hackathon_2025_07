@@ -9,7 +9,7 @@ import result1 from '../images/result1.png';
 import result2 from '../images/result2.jpg';
 import result3 from '../images/result3.png';
 
-function Main({handleClick}) {
+function Main({handleNatureClick}) {
 
   return (
     <>
@@ -17,7 +17,7 @@ function Main({handleClick}) {
     <a href="./index.html" className="header__logo"></a> 
     <select name="select-city" className="header__select-city"> 
       <option value="Москва">Москва</option>
-      <option value="Питер" selected>Питер</option>
+      <option value="Питер" defaultValue>Санкт-Петербург</option>
       <option value="Краснодар">Краснодар</option>
     </select>
     <button type="button" className="header__search"><img src={search} alt="Поиск" /></button>
@@ -73,7 +73,7 @@ function Main({handleClick}) {
       <h2 className="create-initiation__title title">Создать заявку</h2>
       <p className="create-initiation__subtitle subtitle">Выбери категорию, чтобы создать мероприятие</p>
       <div className="create-initiation__container">
-        <button className="create-initiation__add" onClick={handleClick}>Природа</button>
+        <button className="create-initiation__add" onClick={handleNatureClick}>Природа</button>
         <button className="create-initiation__add">Город</button>
         <button className="create-initiation__add">Люди</button>
         <button className="create-initiation__add">Животные</button>
