@@ -1,5 +1,7 @@
 import React from 'react';
 import { Route, Switch, Redirect, useHistory } from 'react-router-dom';
+
+import ProtectedRoute from "./ProtectedRoute";
 import CreateEvent from './CreateEvent';
 import Main from './Main';
 import ActiveEvents from './ActiveEvents';
@@ -13,9 +15,27 @@ function App() {
   const history = useHistory();
 
   const [isNatureChosen, setIsNatureChosen] = React.useState(false);
+  const [isCityChosen, setIsCityChosen] = React.useState(false);
+  const [isPeopleChosen, setIsPeopleChosen] = React.useState(false);
 
-  function createEvent() {
+  function createNatureEvent() {
+    setIsCityChosen(false);
+    setIsPeopleChosen(false);
     setIsNatureChosen(true);
+    history.push("/create-event");
+  }
+
+  function createCityEvent() {
+    setIsNatureChosen(false);
+    setIsPeopleChosen(false);
+    setIsCityChosen(true);
+    history.push("/create-event");
+  }
+
+  function createPeopleEvent() {
+    setIsNatureChosen(false);
+    setIsCityChosen(false);
+    setIsPeopleChosen(true);
     history.push("/create-event");
   }
 
@@ -23,11 +43,17 @@ function App() {
     <div className="page">
       <Switch>
         <Route exact path="/">
-          <Main handleNatureClick={createEvent} />
+          <Main 
+          handleCityClick={createCityEvent}
+          handleNatureClick={createNatureEvent}
+          handlePeopleClick={createPeopleEvent} />
         </Route>
-        <Route path="/create-event">
-          <CreateEvent isNatureChosen={isNatureChosen} />
-        </Route>
+        <ProtectedRoute 
+        path="/create-event" 
+        component={CreateEvent} 
+        isNatureChosen={isNatureChosen} 
+        isCityChosen={isCityChosen} 
+        isPeopleChosen={isPeopleChosen} />
         <Route path="/active-events">
           <ActiveEvents />
         </Route>
