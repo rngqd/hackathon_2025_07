@@ -12,19 +12,21 @@ import Google from '../images/Google.svg';
 function App() {
   const history = useHistory();
 
+  const [isNatureChosen, setIsNatureChosen] = React.useState(false);
 
   function createEvent() {
+    setIsNatureChosen(true);
     history.push("/create-event");
   }
 
   return (
-    <body class="page">
+    <div className="page">
       <Switch>
         <Route exact path="/">
-          <Main handleClick={createEvent} />
+          <Main handleNatureClick={createEvent} />
         </Route>
         <Route path="/create-event">
-          <CreateEvent />
+          <CreateEvent isNatureChosen={isNatureChosen} />
         </Route>
         <Route path="/active-events">
           <ActiveEvents />
@@ -46,7 +48,7 @@ function App() {
           </nav>
         </div>
       </footer>
-    </body>
+    </div>
   );
 }
 
