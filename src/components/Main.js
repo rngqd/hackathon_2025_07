@@ -9,7 +9,7 @@ import result1 from '../images/result1.png';
 import result2 from '../images/result2.jpg';
 import result3 from '../images/result3.png';
 
-function Main({handleNatureClick}) {
+function Main({handleNatureClick, handleCityClick, handlePeopleClick}) {
 
   return (
     <>
@@ -74,8 +74,8 @@ function Main({handleNatureClick}) {
       <p className="create-initiation__subtitle subtitle">Выбери категорию, чтобы создать мероприятие</p>
       <div className="create-initiation__container">
         <button className="create-initiation__add" onClick={handleNatureClick}>Природа</button>
-        <button className="create-initiation__add">Город</button>
-        <button className="create-initiation__add">Люди</button>
+        <button className="create-initiation__add" onClick={handleCityClick}>Город</button>
+        <button className="create-initiation__add" onClick={handlePeopleClick}>Люди</button>
         <button className="create-initiation__add">Животные</button>
       </div>
     </section>

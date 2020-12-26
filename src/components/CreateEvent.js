@@ -4,20 +4,31 @@ import calendar from '../images/calendar.svg';
 import time from '../images/time.svg';
 import location from '../images/location.svg';
 import bonus from '../images/bonus.svg';
+import { poems } from '../data/constants';
 
-
-function CreateEvent({isNatureChosen}) {
-
-  const [selectValue, setSelectValue] = React.useState({
-    category: "",
-  });
+function CreateEvent({isNatureChosen, isCityChosen, isPeopleChosen}) {
+  const [selectedValue, setSelectedValue] = React.useState(false);
+  // const [isValueSelected, setIsValueSelected] = React.useState(false);
+  console.log(selectedValue)
 
   const handleSelectChange = (e) => {
     const { name, value } = e.target;
-    setSelectValue({
+    setSelectedValue({
       [name]: value,
-    });
+    }
+    );
   };
+  const poem = poems.find(item => item.category === selectedValue.category);
+
+  // React.useEffect(() => {
+  //   selectedCheck();
+  // }, []);
+
+  // function selectedCheck () {
+  //   if (selectedValue != "") {
+  //     setIsValueSelected(true);
+  //   }
+  // }
 
     // function handleSubmit(e) {
   //   e.preventDefault();
@@ -56,11 +67,10 @@ function CreateEvent({isNatureChosen}) {
         </nav>
         {isNatureChosen && 
         <select name="category" className="initiation__category" onChange={handleSelectChange}>
-          {/* функция для обновления value -> в стейт и в зависимости от стейта нужный стих */}
           <option>Уборка города</option>
           <option>Посыпать дорожки песком</option>
           <option>Уборка снега</option>
-          <option>Передержка собаки</option>
+          <option>Уборка листьев</option>
           <option>Покормить собаку</option>
           <option>Приютить котенка</option>
           <option>Уборка леса</option>
@@ -71,14 +81,35 @@ function CreateEvent({isNatureChosen}) {
           <option>Покормить птиц</option>
           <option>Смастерить скворечник</option>
         </select>}
+        {isCityChosen && 
+        <select name="category" className="initiation__category" defaultValue="Полезная сортировка" onChange={handleSelectChange}>
+          <option>Победить гололед</option>
+          <option>Победить вонючие кучи</option>
+          <option>Полезная сортировка</option>
+          <option>Здрасьте покрасьте</option>
+          <option>Детская туса</option>
+          <option>Старушка скамейка</option>
+          <option>Ветхий тротуар</option>
+          <option>Банька по белому</option>
+          <option>Толкаем МАЗ</option>
+          <option>Погасли лампочки</option>
+          <option>Чистим грязевые реки</option>
+          <option>Сушим дворовые моря</option>
+        </select>}
+        {isPeopleChosen && 
+        <select name="category" className="initiation__category" onChange={handleSelectChange}>
+          <option>Соревнуемся бабулями</option>
+          <option>Едем в дом к пенсионерам</option>
+          <option>Не болейте малыши</option>
+          <option>Детей чужих не бывает</option>
+          <option>Благотворительность</option>
+          <option>Разыскиваем мецената</option>
+          <option>Помоги соседу</option>
+        </select>}
         <article className=" initiation__text">
-          Из окошек мусор не бросайте,<br />
-          Территорию не засоряйте!<br />
-          Ведь по тротуарам люди ходят,<br />
-          Под ногами мусор ваш находят.<br />
-          Мусор по округе разлетится,<br />
-          Чистый город в грязный превратится.
+          {selectedValue && poem.text}
         </article>
+
         {/* handleSubmit -> данные в апи */}
         <button type="submit" className="initiation__create">Создать меропритие</button>
       </form>
@@ -89,3 +120,4 @@ function CreateEvent({isNatureChosen}) {
 }
 
 export default CreateEvent;
+
