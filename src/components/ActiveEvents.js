@@ -11,7 +11,7 @@ function ActiveEvents() {
         <a href="./index.html" className="header__logo"></a>
         <select name="select-city" className="header__select-city">
           <option value="Москва">Москва</option>
-          <option value="Питер" selected>
+          <option value="Питер">
             Санкт-Петербург
           </option>
           <option value="Краснодар">Краснодар</option>

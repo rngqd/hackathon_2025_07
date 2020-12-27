@@ -51,6 +51,14 @@ function App() {
     history.push("/create-event");
   }
 
+  function  handleActiveEventsClick () {
+    history.push("/active-events");
+  }
+
+  function handleResultsClick() {
+    history.push("/results");
+  }
+
   return (
     <div className="page">
       <Switch>
@@ -59,7 +67,9 @@ function App() {
           handleCityClick={createCityEvent}
           handleNatureClick={createNatureEvent}
           handlePeopleClick={createPeopleEvent}
-          handleAnimalsClick={createAnimalsEvent} />
+          handleAnimalsClick={createAnimalsEvent}
+          handleActiveEventsClick={handleActiveEventsClick}
+          handleResultsClick={handleResultsClick} />
         </Route>
         <ProtectedRoute 
         path="/create-event" 
