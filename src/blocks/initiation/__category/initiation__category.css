@@ -1,4 +1,4 @@
-.initiation__category {
+/* .initiation__category {
   text-align: center;
   text-align-last: center;
   margin: 24px 0 0 43px;
@@ -10,9 +10,9 @@
   background-repeat: no-repeat;
   background-position: right;
   appearance: none;
-}
+} */
 
-/* .initiation__category {
+.initiation__category {
   text-align: center;
   text-align-last: center;
   margin: 24px 0 0 43px;
@@ -20,8 +20,8 @@
   border-radius: 8px;
   width: 235px;
   height: 48px;
-  appearance: none;
+  /* appearance: none; */
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-} */
+}
