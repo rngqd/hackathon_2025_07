@@ -5,6 +5,7 @@ import './pages/initiation.css';
 import './pages/choose.css';
 import './pages/result.css';
 import './pages/profile.css';
+import './pages/header.css';
 import App from './components/App';
 import { BrowserRouter } from 'react-router-dom';
 

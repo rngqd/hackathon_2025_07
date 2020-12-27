@@ -5,9 +5,25 @@ import giftCard from '../images/gift_card.svg';
 import create from '../images/create.svg';
 import call from '../images/call.svg';
 import add from '../images/add.svg';
+import iconcCity from '../images/Icon_city.svg';
+import search from '../images/search.svg';
 
 function Profile() {
   return (
+    <>
+    <header className="header">
+    <a href="./index.html" className="header__logo"></a>
+    <div className="header__select-container">
+      <img src={iconcCity} alt="Город" className="header__select-img" />
+    <select name="select-city" className="header__select-city">
+      <option value="Москва">Москва</option>
+      <option value="Питер" selected>Питер</option>
+      <option value="Краснодар">Краснодар</option>
+    </select>
+    </div>
+    <button type="button" className="header__search"><img src={search} alt="Поиск" /></button>
+    <a href="./initiation.html" className="header__login">Вход</a>
+  </header>
     <main className="main">
       <section className="section profile-card">
         <img src={call} alt="Телефон" className="profile-card__icon" />
@@ -57,6 +73,7 @@ function Profile() {
         <li className="footer__information">Связаться</li>
     </ul>
     </main>
+    </>
   );
 }
 
