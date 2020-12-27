@@ -1,15 +1,13 @@
-.about__add-initiation {
-  position: absolute;
-  top: 400px;
-  left: 61.5px;
+.about__watch-results {
   background: #FDFFAE;
   border: 1px solid #101010;
   box-sizing: border-box;
   border-radius: 8px;
-  width:252px;
+  width: 252px;
   height: 56px;
+  margin: 42px;
 }
 
-.about__add-initiation:hover {
+.about__watch-results:hover {
   cursor: pointer;
 }

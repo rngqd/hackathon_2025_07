@@ -3,5 +3,8 @@
   border-radius: 6px;
   height: 80px;
   border: 2px solid #458F94;
- 
+}
+
+.create-initiation__add:hover {
+  cursor: pointer;
 }

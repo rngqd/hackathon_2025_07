@@ -17,7 +17,7 @@ function Profile() {
       <img src={iconcCity} alt="Город" className="header__select-img" />
     <select name="select-city" className="header__select-city">
       <option value="Москва">Москва</option>
-      <option value="Питер" selected>Питер</option>
+      <option value="Питер">Санкт-Петербург</option>
       <option value="Краснодар">Краснодар</option>
     </select>
     </div>

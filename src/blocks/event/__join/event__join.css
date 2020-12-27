@@ -1,4 +1,4 @@
-.event__join {
+/* .event__join {
   background: #5BC0C0;
   border: 1px solid #458F94;
   box-sizing: border-box;
@@ -6,4 +6,15 @@
   text-decoration: none;
   color: black;
   padding: 14.5px 29px;
+} */
+
+.event__join {
+  background: #5BC0C0;
+  border: 1px solid #458F94;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  padding: 14.5px 46px;
+  width: 143.95px;
 }

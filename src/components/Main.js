@@ -9,7 +9,7 @@ import result1 from '../images/result1.png';
 import result2 from '../images/result2.jpg';
 import result3 from '../images/result3.png';
 
-function Main({handleNatureClick, handleCityClick, handlePeopleClick, handleAnimalsClick}) {
+function Main({handleNatureClick, handleCityClick, handlePeopleClick, handleAnimalsClick, handleActiveEventsClick, handleResultsClick}) {
 
   return (
     <>
@@ -67,7 +67,7 @@ function Main({handleNatureClick, handleCityClick, handlePeopleClick, handleAnim
           <img src={mainSlider5} alt="" className="about__image" />
         </div>
       </div>
-      <button type="button" className="about__add-initiation">Активные заявки</button>
+      <button type="button" className="about__add-initiation" onClick={handleActiveEventsClick}>Активные заявки</button>
     </section>
     <section className="create-initiation section section_type_narrow">
       <h2 className="create-initiation__title title">Создать заявку</h2>
@@ -90,6 +90,7 @@ function Main({handleNatureClick, handleCityClick, handlePeopleClick, handleAnim
         <img src={result3} alt="#" className="result__picture" />
       </div>
     </a>
+    <button type="button" className="about__watch-results" onClick={handleResultsClick}>Смотреть все результаты</button>
     </section>
     <section className="contact section section_type_narrow">
       <h2 className="contact__title title">Будь на связи</h2>
