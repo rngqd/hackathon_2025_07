@@ -17,10 +17,12 @@ function App() {
   const [isNatureChosen, setIsNatureChosen] = React.useState(false);
   const [isCityChosen, setIsCityChosen] = React.useState(false);
   const [isPeopleChosen, setIsPeopleChosen] = React.useState(false);
+  const [isAnimalsChosen, setIsAnimalsChosen] = React.useState(false);
 
   function createNatureEvent() {
     setIsCityChosen(false);
     setIsPeopleChosen(false);
+    setIsAnimalsChosen(false);
     setIsNatureChosen(true);
     history.push("/create-event");
   }
@@ -28,6 +30,7 @@ function App() {
   function createCityEvent() {
     setIsNatureChosen(false);
     setIsPeopleChosen(false);
+    setIsAnimalsChosen(false);
     setIsCityChosen(true);
     history.push("/create-event");
   }
@@ -35,7 +38,16 @@ function App() {
   function createPeopleEvent() {
     setIsNatureChosen(false);
     setIsCityChosen(false);
+    setIsAnimalsChosen(false);
     setIsPeopleChosen(true);
+    history.push("/create-event");
+  }
+
+  function createAnimalsEvent() {
+    setIsNatureChosen(false);
+    setIsCityChosen(false);
+    setIsPeopleChosen(false);
+    setIsAnimalsChosen(true);
     history.push("/create-event");
   }
 
@@ -46,14 +58,16 @@ function App() {
           <Main 
           handleCityClick={createCityEvent}
           handleNatureClick={createNatureEvent}
-          handlePeopleClick={createPeopleEvent} />
+          handlePeopleClick={createPeopleEvent}
+          handleAnimalsClick={createAnimalsEvent} />
         </Route>
         <ProtectedRoute 
         path="/create-event" 
         component={CreateEvent} 
         isNatureChosen={isNatureChosen} 
         isCityChosen={isCityChosen} 
-        isPeopleChosen={isPeopleChosen} />
+        isPeopleChosen={isPeopleChosen}
+        isAnimalsChosen={isAnimalsChosen} />
         <Route path="/active-events">
           <ActiveEvents />
         </Route>
