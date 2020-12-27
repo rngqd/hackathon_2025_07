@@ -7,7 +7,7 @@ const ProtectedRoute = ({ component: Component, ...props  }) => {
   return (
     <Route>
       {
-        () => props.isNatureChosen || props.isCityChosen || props.isPeopleChosen ? <Component {...props} /> : <Redirect to="/" />
+        () => props.isNatureChosen || props.isCityChosen || props.isPeopleChosen || props.isAnimalsChosen ? <Component {...props} /> : <Redirect to="/" />
       }
     </Route>
 )}
