@@ -127,6 +127,11 @@ function ActiveEvents() {
             </div>
           </div>
         </section>
+        <ul className="footer__list">
+          <li className="footer__information">О нас</li>
+          <li className="footer__information">Партнеры</li>
+          <li className="footer__information">Связаться</li>
+        </ul>
       </main>
     </>
   );

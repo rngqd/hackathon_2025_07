@@ -16,7 +16,7 @@ function CreateEvent({isNatureChosen, isCityChosen, isPeopleChosen, isAnimalsCho
     }
     );
   };
-  
+
   const poem = poems.find(item => item.category === selectedValue.category);
 
   return (
@@ -96,6 +96,11 @@ function CreateEvent({isNatureChosen, isCityChosen, isPeopleChosen, isAnimalsCho
         <button type="submit" className="initiation__create">Создать меропритие</button>
       </form>
     </section>
+    <ul className="footer__list">
+        <li className="footer__information">FAQ</li>
+        <li className="footer__information">Партнеры</li>
+        <li className="footer__information">Связаться</li>
+    </ul>
   </main>
   </>
   )
