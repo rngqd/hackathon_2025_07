@@ -1,5 +1,4 @@
 import React from 'react';
-import search from '../images/search.svg';
 import mainSlider1 from '../images/main-slider-1.png';
 import mainSlider2 from '../images/main-slider-2.png';
 import mainSlider3 from '../images/main-slider-3.png';
@@ -9,20 +8,8 @@ import result1 from '../images/result1.png';
 import result2 from '../images/result2.jpg';
 import result3 from '../images/result3.png';
 
-function Main({handleNatureClick, handleCityClick, handlePeopleClick, handleAnimalsClick, handleActiveEventsClick, handleResultsClick}) {
-
+function Main({createEvent, handleActiveEventsClick, handleResultsClick}) {
   return (
-    <>
-    <header className="header">
-    <a href="./index.html" className="header__logo"></a> 
-    <select name="select-city" className="header__select-city"> 
-      <option value="Москва">Москва</option>
-      <option value="Питер" defaultValue>Санкт-Петербург</option>
-      <option value="Краснодар">Краснодар</option>
-    </select>
-    <button type="button" className="header__search"><img src={search} alt="Поиск" /></button>
-    <a href="./initiation.html" className="header__login">Вход</a>
-  </header>
     <main className="main">
     <section className="about section">
       <div className="about__container">
@@ -73,10 +60,10 @@ function Main({handleNatureClick, handleCityClick, handlePeopleClick, handleAnim
       <h2 className="create-initiation__title title">Создать заявку</h2>
       <p className="create-initiation__subtitle subtitle">Выбери категорию, чтобы создать мероприятие</p>
       <div className="create-initiation__container">
-        <button className="create-initiation__add" onClick={handleNatureClick}>Природа</button>
-        <button className="create-initiation__add" onClick={handleCityClick}>Город</button>
-        <button className="create-initiation__add" onClick={handlePeopleClick}>Люди</button>
-        <button className="create-initiation__add" onClick={handleAnimalsClick}>Животные</button>
+        <button className="create-initiation__add" onClick={createEvent.bind(null, 'nature')}>Природа</button>
+        <button className="create-initiation__add" onClick={createEvent.bind(null, 'city')}>Город</button>
+        <button className="create-initiation__add" onClick={createEvent.bind(null, 'people')}>Люди</button>
+        <button className="create-initiation__add" onClick={createEvent.bind(null, 'animals')}>Животные</button>
       </div>
     </section>
 
@@ -100,13 +87,7 @@ function Main({handleNatureClick, handleCityClick, handlePeopleClick, handleAnim
         <button className="contact__button">Подписаться</button>
       </form>
     </section>
-    <ul className="footer__list">
-      <li className="footer__information">О нас</li>
-      <li className="footer__information">Партнеры</li>
-      <li className="footer__information">Связаться</li>
-    </ul>
   </main>
-  </>
   )
 }
 
