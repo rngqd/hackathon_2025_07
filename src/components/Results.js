@@ -1,29 +1,10 @@
 import React from "react";
-import search from '../images/search.svg';
 import result1 from '../images/result1.png';
 import result2 from '../images/result2.jpg';
 import result3 from '../images/result3.png';
 
-
 function Results() {
   return (
-    <>
-      <header className="header">
-        <a href="./index.html" className="header__logo"></a>
-        <select name="select-city" className="header__select-city">
-          <option value="Москва">Москва</option>
-          <option value="Питер">
-            Санкт-Петербург
-          </option>
-          <option value="Краснодар">Краснодар</option>
-        </select>
-        <button type="button" className="header__search">
-          <img src={search} alt="Поиск" />
-        </button>
-        <a href="./initiation.html" className="header__login">
-          Вход
-        </a>
-      </header>
       <main className="main">
         <section className="section event section_type_narrow">
           <div className="event__container">
@@ -141,13 +122,7 @@ function Results() {
             </a>
           </div>
         </section>
-        <ul className="footer__list">
-          <li className="footer__information">О нас</li>
-          <li className="footer__information">Партнеры</li>
-          <li className="footer__information">Связаться</li>
-        </ul>
       </main>
-    </>
   );
 }
 
