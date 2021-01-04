@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './pages/index.css';
+import './pages/initiation.css';
+import './pages/choose.css';
+import './pages/result.css';
+import './pages/profile.css';
+import './pages/header.css';
+import App from './components/App';
+import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

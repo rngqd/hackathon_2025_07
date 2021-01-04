@@ -1,4 +1,4 @@
-.initiation__category {
+/* .initiation__category {
   text-align: center;
   text-align-last: center;
   margin: 24px 0 0 43px;
@@ -10,4 +10,18 @@
   background-repeat: no-repeat;
   background-position: right;
   appearance: none;
+} */
+
+.initiation__category {
+  text-align: center;
+  text-align-last: center;
+  margin: 24px 0 0 43px;
+  box-shadow: -2px 2px 4px rgba(230, 230, 230, 0.2), 2px -2px 4px rgba(230, 230, 230, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.9), 2px 2px 5px rgba(230, 230, 230, 0.9), inset 1px 1px 2px rgba(255, 255, 255, 0.3), inset -1px -1px 2px rgba(230, 230, 230, 0.5);
+  border-radius: 8px;
+  width: 235px;
+  height: 48px;
+  /* appearance: none; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }

@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Hackathon 2025
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Проектная работа команды студентов Яндекс.Практикума факультетов "Дизайнер интерфейсов" и "Веб-разработчик" 
 
-## Available Scripts
+## Тема хакатона 2025 - Активный гражданин
 
-In the project directory, you can run:
+В 2025 году цензура достигла своего предела, своё мнение можно высказывать лишь используя в своей речи строки классиков, причём только в стихотворной форме. Но, несмотря на это, находятся активные люди, готовые вносить положительные изменения в свою жизнь, жизнь окружающих и жизнь своего города, используя в качестве инициативы стихотворные произведения. 
 
-### `npm start`
+## Описание приложения
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Планируется, что любой человек, желающий проявить инициативу, сможет зайти на сайт и присоединиться к команде единомышленников, или же сможет самостоятельно организовать новое мероприятие и сделать свой город лучше! Сайт должен будет нести в себе функционал выбора подходящего мероприятия, создания собственного мероприятия, а для того, чтобы добавить мотивации пользователю, вводится система баллов и система рангов.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## На данном этапе 
 
-### `npm test`
+Разработана основная концепция сайта, продуман дизайн для будущих блоков и страниц. Реализована главная страница, страница с просмотром выполненых работ, уже созданных мероприятий, профиль пользователя. Если же гражданин не найдёт себе дела по душе, он сможет воспользоваться формой создания собственного мероприятия.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Планы на будущее
+* отправка данных пользователя и гражданской инициативы в виде стиха на удаленный сервер; 
+* регистрация и авторизация пользователей; 
+* возможность накопления и использования баллов за участие в мероприятиях;
+* открытие страницы с ошибкой при переходе на несуществующий роут;
+* оптимизация кода.
 
-### `npm run build`
+## Технологии
+HTML, CSS, JavaScript, React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Установка
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Перед началом работы необходимо проверить наличие установленного node.js и npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Скопируйте проект на компьютер:
+```bash
+git clone https://github.com/kronos2033/hackathon_2025_07.git
+```
 
-### `npm run eject`
+Установите зависимости:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Запуск приложения:
+```bash
+npm run start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+По дефолту приложение запустится на 3000 порту
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Дизайн-проект в figma**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* [Макет](https://www.figma.com/file/oGfzpNai4P0WVHbh1STKd7/Hackathon_2025_07?node-id=133%3A17905)
 
-## Learn More
+**Демо**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [Ссылка на демо проекта](https://kronos2033.github.io/hackathon_2025_07/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Состав команды
 
-### Code Splitting
+студенты факультета "Дизайнер интерфейсов":
+- Анна Макарьина
+- Анна Розова
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+студенты факультета "Веб-разработчик":
+* [Елена Стрижакова](https://github.com/Kalibryyy)
+* [Александр Муковня](https://github.com/kronos2033)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

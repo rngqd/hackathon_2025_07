@@ -1,0 +1,7 @@
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__avatar/header__avatar.css);
+@import url(../blocks/header/__login/header__login.css);
+@import url(../blocks/header/__search/header__search.css);
+@import url(../blocks/header/__select-city/header__select-city.css);
+@import url(../blocks/header/__select-container/header__select-container.css);

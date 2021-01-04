@@ -1,0 +1,13 @@
+.profile-bio__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 9px;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #D0F1EF;
+  border-radius: 50%;
+}
