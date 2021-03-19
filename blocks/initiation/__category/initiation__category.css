@@ -6,8 +6,8 @@
   border-radius: 8px;
   width: 235px;
   height: 48px;
-  background:url(../../../images/down-arrow.png);
-  background-repeat: no-repeat;
-  background-position: right;
   appearance: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
